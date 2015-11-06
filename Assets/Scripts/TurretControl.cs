@@ -17,12 +17,10 @@ public class TurretControl : MonoBehaviour {
     
 
 	void Start () {
-        Debug.Log(gameObject);
 		StartCoroutine(Shoot());
 	}
 
 	void Update () {
-        Debug.Log(gameObject);
 		//Check if target is close and shot it.
 		distance = Vector3.Distance(target.position, transform.position);
 		if (target && CanShoot()) {
